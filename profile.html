@@ -12,34 +12,69 @@
         #body{
             align:"center";padding-left: 15%;
         }
+        h3{
+            text-align: left;
+            font-size: 20px;
+            font-family: 'serif
+        }
+        .basicinfo{
+                width:10%;
+                /* padding-left: 10%; */
+                /* margin-left: 10%; */
+                font-size:medium;
+                
+            }
+            img{
+                align:right;
+                width:900%; 
+                height:40%;
+            }
+        @media print {
+                .screen-only {
+                    display : none;
+                }
+        }
+        @media (max-width: 50%){
+
+            .basicinfo{
+                width:10%;
+                padding-left: 10%;
+                margin-left: 10%;
+                font-size-adjust: 5;
+                
+            }
+
+        }
         </style>
     </head>
     <div id="body">
-    <BODY>
+    <BODY class="screen-only">
         <h1 align="center";>
             MY PROFILE
         </h1>
         <div id="mydiv">
         
-            <img src="myimage.jpeg" align="right"width="300" height="300" ></br>   
+            <div class="basicinfo">
+                <!-- align="right"width="300" height="300" -->
+                <img src="myimage.jpeg"  ></br>   
+                
             
-        
-            <ul>
-                    
-                <h3 style="text-align: left;font-size: 20px;font-family: 'serif';">Name: R.Shresta</h3>
-                <h3 style="text-align: left;font-size: 20px;font-family: 'serif';">Email id: <a href="www.google.com">shrestareddy82@msitprogram.net</a></h3>
-                <h3 style="text-align: left;font-size: 20px;font-family: 'serif';">Date of birth: 05/01/1997<br></h3>
-                <h3 style="text-align: left;font-size: 20px;font-family: 'serif';">Address: H-no:3-4-378,
-                    lingampally,kachiguda,hyderabad.</h3>
-            </ul>
-            
+                <ul >
+                        
+                    <h3>Name: R.Shresta</h3>
+                    <h3>Email id: <a href="www.google.com">shrestareddy82@msitprogram.net</a></h3>
+                    <h3>Date of birth: 05/01/1997<br></h3>
+                    <h3>Address: H-no:3-4-378,
+                        lingampally,kachiguda,hyderabad.</h3></ul></br>
+                </ul>
+            </div>
             <h2 style="text-align: left;font-size: 30px;font-family: 'serif';">Career Objectives</h2>
-            <p  style="font-size: 25px;margin-top: 60px;font-family: 'serif';">I would like to work in challenging environment. I want to see myself in better position. </p>
+            <p  style="font-size: 25px;margin-top: 30px;font-family: 'serif';">I would like to work in challenging environment. I want to see myself in better position. </p>
             <h2 style="text-align: left;font-size: 30px;font-family: 'serif';">Strength</h2>
-            <ul style="font-size: 25px;margin-top: 60px;font-family: 'serif';">
+            <ul style="font-size: 25px;margin-top: 30px;font-family: 'serif';">
             
             <li>Quick learner</li>
-            <br>
+            </br>
             <li>Goal Oriented</li>
             <br>
             <li>Adaptive</li>
@@ -47,7 +82,7 @@
 
         <h2 style="text-align: left;font-size: 30px;font-family: 'serif';">Hobbies</h2>
             
-        <ol style="font-size: 25px;margin-top: 60px;font-family: 'serif';">
+        <ol style="font-size: 25px;margin-top: 30px;font-family: 'serif';">
             <li>Reading Comic Books</li>
             <br>
             <li>Sketching</li>

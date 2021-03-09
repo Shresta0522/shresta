@@ -10,6 +10,11 @@
             #content{
                 width:80%;float:left;border:1px solid;height:100% ;padding:40px;background-color:azure;
             }
+            @media print {
+                .screen-only {
+                    display : none;
+                }
+            }
             .btn{
                     border: 1px solid #3498db;
                     background: none;
@@ -59,7 +64,8 @@
         color:rgb(20, 19, 19);
         font-size:18px;
         margin-bottom:16px;
-
+        margin-left: 50px;
+        width:400px;
     }
     input{
         
@@ -72,8 +78,11 @@
         color:black;
         font-size: 18px;
         font-weight:bold;
-        height:30px;
+        height:40px;
         margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 90%;
+        width:400px;
 
     }
     form .submit:hover{
@@ -91,7 +100,7 @@
     <style>
 
     </style>
-    <body>
+    <body class="screen-only">
         <div id="body">
             <h1 align="center";>
                Contact Page
