@@ -1,0 +1,125 @@
+<!Doctype html>
+    <head>
+        <title>
+            Contact Page
+        </title>
+        <style>
+            #body{
+                align:"center";padding-left: 15%;
+            }
+            #content{
+                width:80%;float:left;border:1px solid;height:100% ;padding:40px;background-color:azure;
+            }
+            .btn{
+                    border: 1px solid #3498db;
+                    background: none;
+                    padding:10px 20px;
+                    font-size: 20px;
+                    font-family: "montserrat";
+                    margin: 10px;
+                    transition: 0.5s;
+                    position:  relative;
+                    overflow:hidden;
+                }
+    .btn:hover{
+        color: #fff;
+    }
+    .btn:hover::before{
+        height:180;
+        background: #3498db;
+
+    }
+    .content {
+                text-align: center;
+                margin:50px;
+            }
+    .contact-title{
+        margin-top: 100px;
+        color:brown;
+        text-transform: uppercase;
+        transition: ease-in-out;
+
+    }
+    .contact-title h1{
+        font-size: 32px;
+        line-height: 10px;
+
+    }
+    form{
+        margin-top: 50px;
+        transition: ease-in-out;
+
+     }
+    .form-control{
+        width:550px;
+        background:transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+        color:rgb(20, 19, 19);
+        font-size:18px;
+        margin-bottom:16px;
+
+    }
+    input{
+        
+        align-items: center;
+        height: 55px;
+    }
+    form .submit{
+        background:indianred;
+        border-color: transparent;
+        color:black;
+        font-size: 18px;
+        font-weight:bold;
+        height:30px;
+        margin-top: 20px;
+
+    }
+    form .submit:hover{
+        background-color: cadetblue;
+        cursor: pointer;
+    }
+    .container{
+                border:lightblue solid;
+                padding:20%
+                margin-left: 10%;
+                margin-right: 5%;
+            }
+        </style>
+    </head>
+    <style>
+
+    </style>
+    <body>
+        <div id="body">
+            <h1 align="center";>
+               Contact Page
+            </h1>
+            <div id="content">
+            <div class="container">
+                <div class="contact-form">
+                    <form id="contact-form" method="post" action="">
+                        <input name="name" type="text"class="form-control" placeholder="yourname"required>
+                        <br>
+                        <input name="email" type="email" class="form-control" placeholder="email-id" required>
+                        <br>
+                        <textarea name="message" class="form-control" plaxceholder="message" required></textarea>
+                        <br>
+                        <input type="submit" class="form-control submit" value="send message">
+                    </form>
+                </div>
+                </div>
+            <p><a href="https://github.com" target="new">
+                <img src="github.png" alt="GitHub" width="300" height="132">
+                </a></p>
+            <p><a href="https:/www.hackerrank.com" target="new">
+                <img src="hackerank.png" alt="Hackerrank" width="150" height="132" paddiing-left=15%>
+                </a></p>
+                
+            <a href="profile.html">About Me</a> </br>
+            <a href="QualificationPage.html">Education Details </a>
+        </div>
+        </div>
+    </body>
+</html>
