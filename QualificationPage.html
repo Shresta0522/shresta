@@ -5,10 +5,10 @@
     </title>
     <style>
         #body{
-            align:"center";padding-left: 15%;
+            align:"center";padding-left: 5%;padding-right: 5%;padding-bottom: 10%;
         }
         #mydiv{
-
+            align:"center";
             width:80%;float:left;border:1px solid;height:100% ;padding:40px;background-color:azure;
 
         }
@@ -17,6 +17,25 @@
                     display : none;
                 }
         }
+        .btn{
+        border: 5px solid #3073aa;
+        background: none;
+        padding:10px 20px;
+        font-size: 20px;
+        font-family: "montserrat";
+        margin: 10px;
+        transition: 0.5s;
+        position:  relative;
+        overflow:hidden;
+    }
+    .btn:hover{
+        color: rgb(209, 19, 19);
+    }
+    .btn:hover::before{
+        height:180;
+        background: #3498db;
+
+    }
     </style>
 </head>
 <div id="body">
@@ -24,38 +43,41 @@
         
         <h1 align="center">EDUCATIONAL DETAILS</h1>
         <div id="mydiv">
-            <table border="2" border-color="green" cellspacing="5" width="60%" >
+            <a href="profile.html"><button class= "btn btn1">About Me</button> </a>
+            <a href="QualificationPage.html"><button class= "btn btn1">Education Details</button> </a> 
+            <a href="ProjectDetails.html"><button class= "btn btn1">My Projects</button> </a>
+            <a href="ContactPage.html"><button class= "btn btn1">Contact</button> </a>
 
-            <thead>
-                    
-                    <tr>
-                        <th>Course name</th>&nbsp;
-                        <th>School/college name</th>&nbsp;
-                        <th>Year</th>
-                    </tr>
-                    <thead>
-                        <tbody>
-                            <tr>
-                                <td>SSC</td>
-                                <td>St Paul's High School</td>
-                                <td>2012</td>
-                            </tr>
-                            <tr>
-                                <td>Intermediate</td>
-                                <td>Srichaitanya junior college</td>
-                                <td>2014</td>
-                            </tr>
-                            <tr>
-                                <td>Btech</td>
-                                <td>AVN Institution and Engineering College</td>
-                                <td>2018</td>
-                            </tr>
-                        </tbody>
-                    </thead>
+            <table border="2" border-color="black" width="80%" font-size="45px" margin-top="30px" font-family="serif" >
+
+                <thead>
+                        
+                        <tr>
+                            <th>Course name</th>&nbsp;
+                            <th>School/college name</th>&nbsp;
+                            <th>Year</th>
+                        </tr>
+                        <thead>
+                            <tbody>
+                                <tr>
+                                    <td>SSC</td>
+                                    <td>St Paul's High School</td>
+                                    <td>2012</td>
+                                </tr>
+                                <tr>
+                                    <td>Intermediate</td>
+                                    <td>Srichaitanya junior college</td>
+                                    <td>2014</td>
+                                </tr>
+                                <tr>
+                                    <td>Btech</td>
+                                    <td>AVN Institution and Engineering College</td>
+                                    <td>2018</td>
+                                </tr>
+                            </tbody>
+                        </thead>
                 </thead>
             </table> 
-            <a href="profile.html">About Me</a> </br>
-            <a href="ContactPage.html">Contact Page</a>  
         </div>
     </div>
     </body>
